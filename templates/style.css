@@ -25,3 +25,12 @@
     font-family: 'Neutral face';
     
 }
+
+.title {
+    display: inline-block; /*делает слова на одной прямой*/
+    margin-left: 3%; /*делает растояние между словами*/
+    
+    size: 18px;
+    color: lightgray;
+    
+}
