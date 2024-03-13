@@ -11,6 +11,7 @@
     width: 37px;
     height: 37px;
     position: absolute; /*будет допустимо настраивание самому, где и как*/
+    top:2%;
     left: 8%;
     text-align: left; /*текст со стороны фотки*/
 }
