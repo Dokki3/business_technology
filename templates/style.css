@@ -7,6 +7,16 @@
     width: 100%;
   }*/
 
+.slova {
+    text-align: justify; /*добавляем text-align: justify, для дочерних элементов*/
+    letter-spacing: 1px;
+    height: 8em;
+    padding: 2em 10%;
+    background: #2c3e50;
+    color: #fff;
+}
+
+
 .logo {
     width: 37px;
     height: 37px;
