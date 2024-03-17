@@ -5,7 +5,7 @@
         <title>Рецепты</title>
         <style>
             body {
-                background-color: red;
+                background: #FCF6F6;
                 margin: 0;
             }
             a, u {
@@ -47,12 +47,81 @@
                 left: 90vw;
                 background: #7354CA;
                 border-radius: 50px;
+                border: 0;
                 color: #ffffff;
                 font-size: 30px;
+            }
+            .footer {
+                position: absolute;
+                width: 99vw;
+                height: 9vh;
+                top: 191vh;
+                background: #D9D9D9;
+                padding-top: 2.5vh;
+                font-size: 30px;
+            }
+            .search {
+                position: absolute;
+                width: 80vw;
+                height: 6vh;
+                top: 15vh;
+                left: 10vw;
+                border-radius: 50px;
+                border: 1px solid #ACA4A4;
+                font-size: 30px;
+            }
+            .search_button {
+                position: absolute;
+                width: 10vw;
+                height: 6.3vh;
+                top: 15vh;
+                left: 80.4vw;
+                border-radius: 50px;
+                border: 0;
+                background: #7354CA;
+            }
+            .filters {
+                position: absolute;
+                width: 17vw;
+                height: 80vh;
+                top: 30vh;
+                left: 10vw;
+                border-radius: 50px;
+                border: 0;
+                background: #D8E994;
+            }
+            .list {
+                position: absolute;
+                width: 60.8vw;
+                height: 160vh;
+                top: 28.5vh;
+                left: 30vw;
+            }
+            .bluda {
+                display: inline-block;
+                width: 28.5vw;
+                height: 50vh;
+                background: green;
+                margin: 1.5vh;
             }
         </style>
     </head>
     <body>
+
+        <input type="text" class="search">
+        <input type="button" class="search_button">
+
+        <div class="filters"></div>
+
+        <div class="list">
+            <div class="bluda"></div>
+            <div class="bluda"></div>
+            <div class="bluda"></div>
+            <div class="bluda"></div>
+            <div class="bluda"></div>
+            <div class="bluda"></div>
+        </div>
+
         <div class="header">
             <img src="img/free-icon-hostess-5120919.png" width="auto" height="118vh">
             <h1 class="title">Хозяюшка</h1>
@@ -64,6 +133,13 @@
                 </center>
             </div>
             <button class="sing_in">sing in</button>
+        </div>
+        <div class="footer">
+            <center>
+                <p class="nav_text"> +7999-999-99-99</p>
+                <p class="nav_text"> pizdec@gmail.com</p>
+                <p class="nav_text"> ул. яЗаебался д. 84393</p>
+            </center>
         </div>
     </body>
 </html>
