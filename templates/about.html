@@ -3,8 +3,67 @@
   <head>
       <meta charset="UTF-8">
       <title>О нас</title>
+      <style>
+            body {
+                background-color: red;
+                margin: 0;
+            }
+            a, u {
+              text-decoration: none;
+            }
+
+            .header {
+                position: fixed;
+                width: 100vw;
+                height: 9vh;
+                background-color: white;
+            }
+            .title {
+                position: fixed;
+                top: -1vh;
+                left: 7vw;
+                font-size: 60px;
+            }
+            .nav {
+                position: fixed;
+                width: 30vw;
+                height: 6.5vh;
+                top: 0vh;
+                left: 60vw;
+                font-size: 40px;
+                padding-top: 2.5vh;
+            }
+            .nav_text {
+                display: inline;
+                margin-left: 1vw;
+                margin-right: 1vw;
+                color: #000000;
+            }
+            .sing_in {
+                position: fixed;
+                width: 8vw;
+                height: 6vh;
+                top: 1.5vh;
+                left: 90vw;
+                background: #7354CA;
+                border-radius: 50px;
+                color: #ffffff;
+                font-size: 30px;
+            }
+        </style>
   </head>
   <body>
-      Lfif kj[plwskf;ok;ofgvk;jv;k;cvftguv v7gb78
+      <div class="header">
+        <img src="img/free-icon-hostess-5120919.png" width="auto" height="118vh">
+        <h1 class="title">Хозяюшка</h1>
+        <div class="nav">
+            <center>
+            <a href="http://127.0.0.1:5000/"><p class="nav_text">Главная</p></a>
+            <a href="http://127.0.0.1:5000/recipes"><p class="nav_text">Рецепты</p></a>
+            <a href="http://127.0.0.1:5000/about"><p class="nav_text">О нас</p></a>
+            </center>
+        </div>
+        <button class="sing_in">sing in</button>
+    </div>
   </body>
 </html>
