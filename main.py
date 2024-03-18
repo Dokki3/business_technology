@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import render_template
+import os
 
 app = Flask(__name__)
 
@@ -20,5 +21,6 @@ def recipes():
 
 
 if __name__ == '__main__':
+    img = os.path.join('static', '')
     app.run(debug=True)
 

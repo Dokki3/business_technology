@@ -6,22 +6,85 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background: #FCF6F6;
+            background: #D8E995;
             margin: 0;
         }
         a, u {
           text-decoration: none;
         }
 
+        .foto{
+            width: 100px;
+            height: 100px;
+            margin-left: 3%;
+            margin-top: 1vh;
+        }
+
+        .header {
+            position: fixed;
+            width: 100vw;
+            height: 9vh;
+            background-color: white;
+        }
+        .title {
+            position: fixed;
+            top: -1.5vh;
+            left: 7vw;
+            font-size: 60px;
+            font-family: 'Neutral face';
+        }
+        .nav {
+            position: fixed;
+            width: 30vw;
+            height: 6.5vh;
+            top: 1vh;
+            left: 60vw;
+            font-size: 40px;
+            padding-top: 2.5vh;
+
+        }
+        .nav_text {
+            display: inline;
+            margin-left: 1vw;
+            margin-right: 1vw;
+            color: #000000;
+            font-family: 'Arial';
+        }
+        .sing_in {
+            position: fixed;
+            width: 8vw;
+            height: 6vh;
+            top: 1.5vh;
+            left: 90vw;
+            background: #7354CA;
+            border-radius: 50px;
+            border: 0;
+            color: #ffffff;
+            font-size: 30px;
+        }
+        .footer {
+            position: absolute;
+            width: 99vw;
+            height: 9vh;
+            top: 100vh;
+            background: #D9D9D9;
+            padding-top: 2.5vh;
+            font-size: 30px;
+        }
     </style>
 </head>
 <body>
+
+
+    <img class="salat" src="{{ url_for('static', filename='image.jpg') }}">
+
+    <div>
+        <p>Лучшие рецепты из доступных продуктов</p>
+    </div>
+
     <div class="header">
-
-        <img class="foto" src="img/free-icon-hostess-5120919.png">
-
-        <p class="title">Хозяюшка</p>
-
+        <img src="{{ url_for('static', filename='icon.png') }}" width="auto" height="118vh">
+        <h1 class="title">Хозяюшка</h1>
         <div class="nav">
             <center>
             <a href="http://127.0.0.1:5000/"><p class="nav_text">Главная</p></a>
@@ -29,12 +92,8 @@
             <a href="http://127.0.0.1:5000/about"><p class="nav_text">О нас</p></a>
             </center>
         </div>
-
         <button class="sing_in">sing in</button>
-
     </div>
-
-
     <div class="footer">
         <center>
             <p class="nav_text"> +7999-999-99-99</p>
@@ -42,7 +101,5 @@
             <p class="nav_text"> ул. яЗаебался д. 84393</p>
         </center>
     </div>
-
-
 </body>
 </html>
