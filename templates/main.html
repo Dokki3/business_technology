@@ -16,7 +16,7 @@
         .foto{
             width: 100px;
             height: 100px;
-            margin-left: 3%;
+            margin-left: 2%;
             margin-top: 1vh;
         }
 
@@ -71,6 +71,20 @@
             padding-top: 2.5vh;
             font-size: 30px;
         }
+        .salat {
+            position: absolute;
+            width: 70vw;
+            height: auto;
+            top: 20vh;
+            left: 50vw;
+        }
+        .main_text {
+            position: absolute;
+            width: 40vw;
+            height: auto;
+            top: 20vh;
+            left: 10vw;
+        }
     </style>
 </head>
 <body>
@@ -78,12 +92,12 @@
 
     <img class="salat" src="{{ url_for('static', filename='image.jpg') }}">
 
-    <div>
-        <p>Лучшие рецепты из доступных продуктов</p>
+    <div class="main_text">
+        <p style="font-size: 7vw;">Лучшие рецепты из доступных продуктов</p>
     </div>
 
     <div class="header">
-        <img src="{{ url_for('static', filename='icon.png') }}" width="auto" height="118vh">
+        <img class="foto" src="{{ url_for('static', filename='icon.png') }}" width="auto" height="118vh">
         <h1 class="title">Хозяюшка</h1>
         <div class="nav">
             <center>
