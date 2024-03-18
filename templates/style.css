@@ -7,5 +7,40 @@
     width: 100%;
   }*/
 
+.slova {
+    text-align: justify; /*добавляем text-align: justify, для дочерних элементов*/
+    letter-spacing: 1px;
+    height: 8em;
+    padding: 2em 10%;
+    background: #2c3e50;
+    color: #fff;
+}
 
 
+.logo {
+    width: 37px;
+    height: 37px;
+    position: absolute; /*будет допустимо настраивание самому, где и как*/
+
+    left: 8%;
+    text-align: left; /*текст со стороны фотки*/
+}
+
+.logo_text{
+    vertical-align:middle;
+    font-size: 35px;
+    margin-left: 12%;
+
+    padding: 5px; /*внутренние отступы*/
+    font-family: 'Neutral face';
+
+}
+
+.title {
+    display: inline-block; /*делает слова на одной прямой*/
+    margin-left: 3%; /*делает растояние между словами*/
+
+    size: 18px;
+    color: lightgray;
+
+}
