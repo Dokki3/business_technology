@@ -82,13 +82,29 @@
             }
             .filters {
                 position: absolute;
-                width: 17vw;
-                height: 80vh;
+                width: 14vw;
+                height: 65vh;
                 top: 30vh;
                 left: 10vw;
                 border-radius: 50px;
                 border: 0;
                 background: #D8E994;
+                padding-left: 3vw;
+            }
+
+            input[type=checkbox]
+            {
+              -ms-transform: scale(2);
+              -moz-transform: scale(2);
+              -webkit-transform: scale(2);
+              -o-transform: scale(2);
+              transform: scale(2);
+              padding: 10px;
+              margin-right: 1vw;
+            }
+            /* Might want to wrap a span around your checkbox text */
+            label {
+                font-size: 200%;
             }
             .list {
                 position: absolute;
@@ -111,7 +127,71 @@
         <input type="text" class="search">
         <input type="button" class="search_button">
 
-        <div class="filters"></div>
+        <div class="filters">
+                <h1>Категории</h1>
+                <div>
+                <input type="checkbox" id="hot" value="music">
+                <label for="hot">горячее</label>
+                </div>
+                <div>
+                <input type="checkbox" id="bf" value="music">
+                <label for="bf">завтраки</label>
+                </div>
+                <div>
+                <input type="checkbox" id="sweet" value="music">
+                <label for="sweet">десерты</label>
+                </div>
+                <div>
+                <input type="checkbox" id="sup" value="music">
+                <label for="sup">супы</label>
+                </div>
+                <div>
+                <input type="checkbox" id="salat" value="music">
+                <label for="salat">салаты</label>
+                </div>
+                <div>
+                <input type="checkbox" id="hleb" value="music">
+                <label for="hleb">выпечка</label>
+                </div>
+                <h1>Время готовки</h1>
+                <div>
+                <input type="checkbox" id="15" value="music">
+                <label for="15">15 минут</label>
+                </div>
+                <div>
+                <input type="checkbox" id="30" value="music">
+                <label for="30">30 минут</label>
+                </div>
+                <div>
+                <input type="checkbox" id="60" value="music">
+                <label for="60">60 минут</label>
+                </div>
+                <h1>Особенности</h1>
+                <div>
+                <input type="checkbox" id="meat" value="music">
+                <label for="meat">без мяса</label>
+                </div>
+                <div>
+                <input type="checkbox" id="sahar" value="music">
+                <label for="sahar">без сахара</label>
+                </div>
+                <div>
+                <input type="checkbox" id="lak" value="music">
+                <label for="lak">баз лактозы</label>
+                </div>
+                <div>
+                <input type="checkbox" id="svin" value="music">
+                <label for="svin">без свинины</label>
+                </div>
+                <div>
+                <input type="checkbox" id="luk" value="music">
+                <label for="luk">без лука</label>
+                </div>
+                <div>
+                <input type="checkbox" id="zel" value="music">
+                <label for="zel">без зелени</label>
+                </div>
+        </div>
 
         <div class="list">
             <div class="bluda"></div>
