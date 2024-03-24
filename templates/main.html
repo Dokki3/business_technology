@@ -5,6 +5,7 @@
     <title>Хозяюшка</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        html {-webkit-text-size-adjust:none;}
         body {
             background: #D8E995;
             margin: 0;
@@ -66,7 +67,7 @@
             position: absolute;
             width: 99.1vw;
             height: 9vh;
-            top: 100vh;
+            top: 110vh;
             background: #D9D9D9;
             padding-top: 2.5vh;
             font-size: 2.5vh;
@@ -75,10 +76,10 @@
 
         .salat {
             position: absolute;
-            width: 40vw;
+            width: 50vw;
             height: auto;
             top: 20vh;
-            left: 59.1vw;
+            left: 49.1vw;
         }
         .main_text {
             position: absolute;
@@ -95,7 +96,7 @@
     <img class="salat" src="{{ url_for('static', filename='image2.png') }}">
 
     <div class="main_text">
-        <p style="font-size: 7vw;">Лучшие рецепты из доступных продуктов</p>
+        <p style="font-size: 7vh;">Лучшие рецепты из доступных продуктов</p>
     </div>
 
     <div class="header">
