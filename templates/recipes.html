@@ -23,6 +23,7 @@
                 width: 100vw;
                 height: 9vh;
                 background-color: white;
+                top: 0;
             }
             .title {
                 position: fixed;
@@ -63,10 +64,10 @@
             }
 
             .footer {
-                position: absolute;
+                position: relative;
                 width: 99vw;
                 height: 9vh;
-                top: 191vh;
+                top: 50vh;
                 background: #D9D9D9;
                 padding-top: 2.5vh;
                 font-size: 2.5vh;
@@ -94,14 +95,16 @@
             }
             .filters {
                 position: absolute;
-                width: 14vw;
-                height: 65vh;
+                width: auto;
+                height: auto;
                 top: 30vh;
                 left: 10vw;
                 border-radius: 5vh;
                 border: 0;
                 background: #D8E994;
                 padding-left: 3vw;
+                padding-right: 5vw;
+                padding-bottom: 3vh;
                 font-size: 1.2vh;
             }
 
@@ -116,7 +119,7 @@
                 font-size: 200%;
             }
             .list {
-                position: absolute;
+                position: relative;
                 width: 60.8vw;
                 height: 160vh;
                 top: 28.5vh;
@@ -125,9 +128,22 @@
             .bluda {
                 display: inline-block;
                 width: 28vw;
-                height: 50vh;
-                background: green;
+                height: 28vw;
                 margin: 1.5vh;
+                background: #ffffff;
+                border-radius: 1vw;
+            }
+            .bluda_foto {
+                width: 100%;
+                height: 70%;
+            }
+            .bluda_name {
+                width: 100%;
+                height: 20%;
+                font-family: 'Arial';
+                font-size: 2.5vh;
+                text-align: start;
+                margin-left: 2vw;
             }
         </style>
     </head>
@@ -203,12 +219,56 @@
         </div>
 
         <div class="list">
-            <div class="bluda"></div>
-            <div class="bluda"></div>
-            <div class="bluda"></div>
-            <div class="bluda"></div>
-            <div class="bluda"></div>
-            <div class="bluda"></div>
+            <center>
+            <div class="bluda">
+                <div class="bluda_foto">
+                    <img width="100%" height="100%" style="border-radius: 1vw;" src="{{ url_for('static', filename='lepeshki.jpg') }}">
+                </div>
+                <div class="bluda_name">
+                    <p>Лепешки на кефире с сыром в духовке</p>
+                </div>
+            </div>
+            <div class="bluda">
+                <div class="bluda_foto">
+                    <img width="100%" height="100%" style="border-radius: 1vw;" src="{{ url_for('static', filename='chicken.jpg') }}">
+                </div>
+                <div class="bluda_name">
+                    <p>Курица со шпинатом</p>
+                </div>
+            </div>
+            <div class="bluda">
+                <div class="bluda_foto">
+                    <img width="100%" height="100%" style="border-radius: 1vw;" src="{{ url_for('static', filename='lepeshki.jpg') }}">
+                </div>
+                <div class="bluda_name">
+                    <p>Лепешки на кефире с сыром в духовке</p>
+                </div>
+            </div>
+            <div class="bluda">
+                <div class="bluda_foto">
+                    <img width="100%" height="100%" style="border-radius: 1vw;" src="{{ url_for('static', filename='chicken.jpg') }}">
+                </div>
+                <div class="bluda_name">
+                    <p>Курица со шпинатом</p>
+                </div>
+            </div>
+            <div class="bluda">
+                <div class="bluda_foto">
+                    <img width="100%" height="100%" style="border-radius: 1vw;" src="{{ url_for('static', filename='lepeshki.jpg') }}">
+                </div>
+                <div class="bluda_name">
+                    <p>Лепешки на кефире с сыром в духовке</p>
+                </div>
+            </div>
+            <div class="bluda">
+                <div class="bluda_foto">
+                    <img width="100%" height="100%" style="border-radius: 1vw;" src="{{ url_for('static', filename='chicken.jpg') }}">
+                </div>
+                <div class="bluda_name">
+                    <p>Курица со шпинатом</p>
+                </div>
+            </div>
+            </center>
         </div>
 
         <div class="header">
@@ -216,9 +276,9 @@
             <p class="title">Хозяюшка</p>
             <div class="nav">
                 <center>
-                    <a href="http://127.0.0.1:5000/"><p class="nav_text">Главная</p></a>
-                    <a href="http://127.0.0.1:5000/recipes"><p class="nav_text">Рецепты</p></a>
-                    <a href="http://127.0.0.1:5000/about"><p class="nav_text">О нас</p></a>
+                    <a href="http://192.168.0.15:5000/"><p class="nav_text">Главная</p></a>
+                    <a href="http://192.168.0.15:5000/recipes"><p class="nav_text">Рецепты</p></a>
+                    <a href="http://192.168.0.15:5000/about"><p class="nav_text">О нас</p></a>
                 </center>
             </div>
         <button class="sing_in">sing in</button>
