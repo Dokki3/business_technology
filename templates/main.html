@@ -37,7 +37,7 @@
         }
         .title {
             position: fixed;
-            top: -3vh;
+            top: -2vh;
             left: 7vw;
             font-size: 5vh;
             font-family: 'Neutral face';
@@ -73,8 +73,10 @@
             font-size: 2.5vh;
         }
         .footer {
+            position: absolute;
             width: 99.1vw;
             height: 9vh;
+            top: 100vh;
             background: #D9D9D9;
             padding-top: 2.5vh;
             font-size: 2.5vh;
@@ -82,23 +84,42 @@
         }
 
         .salat {
-            position: relative;
+            position: absolute;
             width: 50vw;
-            height: 66vh;
-            top: -12vh;
+            height: auto;
+            top: 15vh;
             left: 49.1vw;
         }
         .main_text {
-            position: relative;
+            position: absolute;
+            width: 27vw;
+            height: auto;
+            top: 15vh;
+            left: 10vw;
+        }
+        .mini_text {
+            position: absolute;
             width: 40vw;
             height: auto;
-            top: -70vh;
+            top: 50vh;
             left: 10vw;
+            font-size: 2vw;
+        }
+        .but {
+            position: absolute;
+            width: 20vw;
+            height: 7vh;
+            top: 70vh;
+            left: 10vw;
+            font-size: 2vw;
+            border-radius: 5vh;
+            border: 0;
+            background: #7354CA;
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
-    <div class="osn">
         <div class="salat">
             <img style="width: 50vw; height: auto;" src="{{ url_for('static', filename='image2.png') }}">
         </div>
@@ -107,19 +128,22 @@
             <p style="font-size: 7vh;">Лучшие рецепты из доступных продуктов</p>
         </div>
 
+        <p class="mini_text">Узнай новое и попробуй это на вкус</p>
+
+        <a href="http://127.0.0.1:5000/recipes"><input type="button" class="but" value="Перейти в каталог"></a>
+
         <div class="header">
             <img class="foto" src="{{ url_for('static', filename='icon.png') }}" width="auto" height="118vh">
             <p class="title">Хозяюшка</p>
             <div class="nav">
                 <center>
-                <a href="http://192.168.0.15:5000/"><p class="nav_text">Главная</p></a>
-                <a href="http://192.168.0.15:5000/recipes"><p class="nav_text">Рецепты</p></a>
-                <a href="http://192.168.0.15:5000/about"><p class="nav_text">О нас</p></a>
+                <a href="http://127.0.0.1:5000/"><p class="nav_text">Главная</p></a>
+                <a href="http://127.0.0.1:5000/recipes"><p class="nav_text">Рецепты</p></a>
+                <a href="http://127.0.0.1:5000/about"><p class="nav_text">О нас</p></a>
                 </center>
             </div>
             <button class="sing_in">sing in</button>
         </div>
-    </div>
 
     <div class="footer">
         <center>

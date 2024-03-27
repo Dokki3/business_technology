@@ -5,7 +5,6 @@
       <title>О нас</title>
       <style>
             body {
-                background-color: red;
                 margin: 0;
             }
             a, u {
@@ -26,7 +25,7 @@
             }
             .title {
                 position: fixed;
-                top: -3vh;
+                top: -2vh;
                 left: 7vw;
                 font-size: 5vh;
                 font-family: 'Neutral face';
@@ -65,22 +64,31 @@
                 position: absolute;
                 width: 99.1vw;
                 height: 9vh;
-                top: 191vh;
+                top: 140vh;
                 background: #D9D9D9;
                 padding-top: 2.5vh;
                 font-size: 2.5vh;
             }
+
+            .pic {
+                position: absolute;
+                width: 100vw;
+                height: auto;
+                top: 9vh;
+                margin: 0;
+            }
         </style>
   </head>
   <body>
+     <img class="pic" src="{{ url_for('static', filename='image3.png') }}">
      <div class="header">
         <img class="foto" src="{{ url_for('static', filename='icon.png') }}" width="auto" height="118vh">
         <p class="title">Хозяюшка</p>
         <div class="nav">
             <center>
-                <a href="http://192.168.0.15:5000/"><p class="nav_text">Главная</p></a>
-                <a href="http://192.168.0.15:5000/recipes"><p class="nav_text">Рецепты</p></a>
-                <a href="http://192.168.0.15:5000/about"><p class="nav_text">О нас</p></a>
+                <a href="http://127.0.0.1:5000/"><p class="nav_text">Главная</p></a>
+                <a href="http://127.0.0.1:5000/recipes"><p class="nav_text">Рецепты</p></a>
+                <a href="http://127.0.0.1:5000/about"><p class="nav_text">О нас</p></a>
             </center>
         </div>
         <button class="sing_in">sing in</button>
